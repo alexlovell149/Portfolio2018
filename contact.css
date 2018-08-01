@@ -87,7 +87,10 @@
 
 .contact-heading {
   text-align: center;
-  color: red;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 50px;
+  margin-right: 20px;
   font-family: 'Abel', sans-serif;
 }
 
