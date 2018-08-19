@@ -64,3 +64,24 @@ figure figcaption {
   -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
   -moz-box-shadow: 0 3px 6px rgba(0,0,0,.5);
 }
+
+/* Bio */
+.blurb h3 {
+  text-decoration: underline;
+  font-family: 'Helvetica Neue';
+}
+
+.blurb p {
+  font-family: brandon-grotesque, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+.blurb p a:hover {
+  color: red;
+}
+
+.blurb {
+  padding: 100px;
+   height: 60vh;
+   background-image: url('photos/mountainpic.jpg');
+}
