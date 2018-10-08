@@ -6,66 +6,87 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Alex Lovell's Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="base.css"/>
+  <!-- Materialize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="base.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="contact.css" />
-  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  <!-- Google icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Google Font Awesome-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
     crossorigin="anonymous">
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+
 </head>
 
 <body>
 
-  <div class="container">
-    <div class="hero">
-      <nav class="navbar">
-        <a href="#" id="menu-icon"></a>
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="projects.html">PROJECTS</a></li>
-          <li><a href="about.html">ABOUT ME</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-      </nav>
-      <div class="contact-form">
-        <br>
-        <br>
-        <br>
-        <br>
-        <h1 class="contact-heading">Contact Me</h1>
-        <section id="contact">
+  <nav class="nav-extended">
+    <div class="nav-wrapper">
+      <a href="main.html" class="brand-logo"><img src="photos/Alexlogo_3.png"></a>
+      <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="projects.html">PROJECTS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+  </nav>
 
-          <div class="container">
+  <ul class="sidenav" id="mobile-nav">
+    <li><a href="projects.html">PROJECTS</a></li>
+    <li><a href="contact.html">CONTACT</a></li>
+  </ul>
 
+
+  <div class="contact-form">
+    <div class="row">
+      <div class="col s4 offset-s4">
+        <div class="card-panel z-depth-5">
+          <div class="card-content">
             <form name="htmlform" method="post" action="mailto:alexlovell149@gmail.com" enctype="text/plain" target="_blank">
-
-              <input id="name" type="text" name="first_name" placeholder="NAME" required>
-
-              <input id="email" type="email" name="email" placeholder="EMAIL" required>
-
-              <textarea id="message" name="comments" placeholder="MESSAGE" required></textarea>
-
-              <button name="send" type="submit" class="submit">SEND</button>
-
+              <h3>Contact Me</h3>
+              <!-- <div class="row"> -->
+              <div class="input-field">
+                <input placeholder="John" id="first_name" type="text" class="validate">
+                <label for="first_name">First Name</label>
+              </div>
+              <div class="input-field">
+                <input placeholder="Smith" id="last_name" type="text" class="validate">
+                <label for="last_name">Last Name</label>
+              </div>
+              <div class="input-field">
+                <input placeholder="joe@example.com" id="email" type="email" class="validate">
+                <label for="email">Email</label>
+              </div>
+              <div class="input-field">
+                <textarea placeholder="Message" id="textarea1" class="materialize-textarea"></textarea>
+                <label for="textarea1">Comments</label>
+              </div>
+              <button type="submit" class="btn">Submit</button>
+              <!-- </div> -->
             </form>
-
           </div>
-        </section>
+        </div>
       </div>
     </div>
+  </div>
+
   <footer>
     <div class="foot">
       <h2>Alex Lovell</h2>
       <a class="email" href="mailto:alexlovell149@gmail.com" target="_blank">alexlovell149@gmail.com</a>
-      <p class="descrip">I'm an avid learner of everything coding from building database tables to CSS animations to constructing objects in
-        Javascript. Let me help shape your site into a design that best fits your needs.</p>
+      <p class="descrip">I'm an avid learner of everything coding from building database tables to CSS animations
+        to
+        constructing objects in
+        Javascript. Let me help shape your site into a design that best fits your needs</p>
 
       <div class="foot-directory">
         <div class="foot-menu">
           <h3>Menu</h3>
           <ul>
-            <li>
-              <a href="about.html">About</a>
-            </li>
             <li>
               <a href="projects.html">Projects</a>
             </li>
@@ -81,9 +102,6 @@
               <a href="https://github.com/alexlovell149" target="_blank">Github</a>
             </li>
             <li>
-              <a href="https://www.facebook.com/alex.thomas.737" target="_blank">Facebook</a>
-            </li>
-            <li>
               <a href="https://www.linkedin.com/in/alex-lovell/" target="_blank">LinkedIn</a>
             </li>
           </ul>
@@ -95,11 +113,13 @@
   </div>
 
 </body>
-<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 <script src="index.js"></script>
+<!-- Materialize -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<!-- Font Awesome -->
+<script src="https://use.fontawesome.com/ce289a0a1d.js"></script>
 
 
 </html>

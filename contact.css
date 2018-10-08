@@ -4,93 +4,21 @@
 } 
 
 
-.navbar {
-  text-align: center;
-}
 
-.navbar  ul li{
-  display: inline;
-  font-size: 30px;
-  font-family: 'Abel', sans-serif;
-  font-weight: bold;
-}
-
-.navbar a {
-  color: red;
-  padding: 5px 70px;
-  transition-duration: .5s;
-  transition-property: all;
-  transition-timing-function: ease-in-out;
-}
-
-.navbar a:link {
-  text-decoration: none;
-}
-
-.navbar a:hover {
-  color: blue;
-}
-
-/* mobile nav bar */
-
-/* mobile nav-bar hamburger */
-
-@media screen and (max-width:530px) {
-
-  #menu-icon {
-  background: url(photos/Hamburger_icon.svg) no-repeat center;
-  display: block;
-  width: 100%;
-  height: 40px;
-  cursor: pointer;
-  background-color: red;
-
-  }
-
-  .navbar ul {
-    overflow: hidden;
-    background: #505050;
-    height: 0;
-  }
-
-  .navbar ul.open {
-    height: auto;
-  }
-
-  .navbar ul li {
-    text-align: center;
-    float: none;
-    padding 10px;
-    width: 100%;
-    margin: 0;
-  }
-
-  .navbar ul li a {
-    color: #fff;
-    padding: 10px;
-    border-bottom: 2px solid #404040;
-    display: block;
-    margin: 0;
-    width: 100%;
-  }
-}
-
-.hero {
-  background-image: url('photos/mountainbackground.jpg');
+.contact-form {
+  background-color: lightcoral;
   width: 100%;
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   margin: auto;
   padding-bottom: 120px;
+  /* opacity: .4; */
 }
 
-.contact-heading {
+/* .contact-heading {
   text-align: center;
-  color: black;
-  font-weight: bold;
-  margin-bottom: 50px;
-  margin-right: 20px;
+  color: red;
   font-family: 'Abel', sans-serif;
 }
 
@@ -100,7 +28,7 @@
   margin: 20px auto;
   display: block;
   text-align: center;
-}
+} */
 
 .container {
   width: auto;
@@ -108,7 +36,13 @@
   margin: 0;
 }
 
-#contact .container form input,
+.contact-form {
+  text-align: center;
+  padding: 100px;
+}
+
+
+/* #contact .container form input,
 #contact .container form textarea {
   width: 80%;
   height: 30px;
@@ -165,7 +99,7 @@
 
 #contact .container form .required {
   color: #b43838;
-}
+} */
 
 /* Footer */
 
