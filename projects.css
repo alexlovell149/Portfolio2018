@@ -1,11 +1,9 @@
-.hero {
-  background-color: white;
-  background-image: none;
-}
+
 
 .heading {
   margin-bottom: 20px;
   color: black;
+  font-size: 33px;
 }
 
 .project-container {
